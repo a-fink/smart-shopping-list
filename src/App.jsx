@@ -5,14 +5,21 @@ import {
 	Routes,
 	Route,
 } from 'react-router-dom';
-
 import { AddItem, Home, Layout, List } from './views';
-
-import { getItemData, streamListItems, comparePurchaseUrgency } from './api';
+import {
+	getItemData,
+	streamListItems,
+	comparePurchaseUrgency,
+	anonymouslyLogInUser,
+} from './api';
 import { useStateWithStorage } from './utils';
 
 export function App() {
+	// anytime the app loads, anonymously log in the user
+	anonymouslyLogInUser();
+
 	const [data, setData] = useState([]);
+
 	// Using a custom hook to create `listToken` and a function that can be used to update `listToken` later.
 	// listToken is null by default since new users will not have tokens
 	const [listToken, setListToken] = useStateWithStorage(

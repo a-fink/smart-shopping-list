@@ -10,7 +10,8 @@ import {
 	where,
 	getDocs,
 } from 'firebase/firestore';
-import { db } from './config';
+import { signInAnonymously } from 'firebase/auth';
+import { db, auth } from './config';
 import { getFutureDate, getDaysBetweenDates } from '../utils';
 import { calculateEstimate } from '@the-collab-lab/shopping-list-utils';
 
@@ -23,6 +24,20 @@ export async function doesCollectionExist(listId) {
 	const listCollectionRef = collection(db, listId);
 	const testSnapshot = await getCountFromServer(listCollectionRef);
 	return testSnapshot.data().count !== 0;
+}
+
+/**
+ * Log user in anonymously using firebase authentication to allow CRUD operations in database
+ * Firebase docs do not specify behavior, but via testing:
+ * it looks like this creates a new anonymous user if user doesn't already have one, or if user already exists nothing changes
+ * Firebase appears to store/manage user data in user's browser for us
+ */
+export async function anonymouslyLogInUser() {
+	try {
+		await signInAnonymously(auth);
+	} catch (err) {
+		console.log(err);
+	}
 }
 
 /**
