@@ -3,7 +3,7 @@ https://user-images.githubusercontent.com/107282070/223951519-deeec2c6-1c4a-440b
 
 ## Live Site
 
-[Live Site](https://afink-smart-shopping-list.netlify.app/list)
+[Live Site](https://afink-smart-shopping-list.netlify.app)
 
 ## Development Team
 
