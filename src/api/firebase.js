@@ -128,9 +128,8 @@ function sortByDaysUntilNextPurchase(itemArray) {
 /**
  * Add a new item to the user's list in Firestore.
  * @param {string} listId The id of the list we're adding to.
- * @param {Object} itemData Information about the new item.
- * @param {string} itemData.itemName The name of the item.
- * @param {number} itemData.daysUntilNextPurchase The number of days until the user thinks they'll need to buy the item again.
+ * @param {Object} itemData Information about the new item - destructured to access the item's name (string)
+ * the days until the user expects to purchase the item again (integer) and whether this is a hidden item (boolean / undefined)
  */
 export async function addItem(
 	listId,
