@@ -3,5 +3,7 @@ import { App } from './App';
 
 import './index.css';
 
-const root = createRoot(document.getElementById('root'));
+const domNode = document.getElementById('root');
+console.log(domNode);
+const root = createRoot(domNode);
 root.render(<App className="app-container" />);
