@@ -1,4 +1,5 @@
 # Smart Shopping List
+https://user-images.githubusercontent.com/107282070/223951519-deeec2c6-1c4a-440b-a19d-65c45cce7336.mp4
 
 ## Live Site
 
@@ -27,13 +28,13 @@ This project was built as part of the [The Collab Lab's](https://the-collab-lab.
 
 ## Features
 
-- Users can create a shopping list which will learn their buying habbits
-- The list predicts when a user will next need to buy each item and provides status indicators
-- Users can share their list with others such as a friend or family member using a 3-word token
+- Users can create a shopping list which will learn their buying habbits as they add/purchase items
+- The list predicts when a user will next need to buy each item and provides status indicators to the user
+- Users can share their list with others using a 3-word token
 
 ## Built with
 
-![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) Firebase ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
 
 ## Planned Future Improvements
 
@@ -51,10 +52,10 @@ This project was built as part of the [The Collab Lab's](https://the-collab-lab.
 1. Clone the project from GitHub
 2. cd into the project directory in your terminal and run `npm install` to install the dependencies
 
-- **Note:** This project requires the latest Long Term Support (LTS) version of Node (18)
+    - **Note:** This project requires the latest Long Term Support (LTS) version of Node (18)
 
 3. Set up a project/app in your Firebase account and replace the configuration details in `/src/api/config.js` with your own configuration details
 
-- **Note** This project requires Firestore database, and Firebase Auth services, with the Anonymous sign-in provider enabled in Auth
+    - **Note** This project requires Firestore database, and Firebase Auth services, with the Anonymous sign-in provider enabled in Auth
 
 4. Run `npm start` to run the app locally in development mode. You can view the site at http://localhost:3000 in your browser
