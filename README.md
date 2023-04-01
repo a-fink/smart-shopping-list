@@ -26,11 +26,18 @@ This project was built as part of the [The Collab Lab's](https://the-collab-lab.
 
 - [Stacie Taylor](https://github.com/stacietaylorcima) 🙌
 
-## Features
+## Features & Design
 
 - Users can create a shopping list which will learn their buying habbits as they add/purchase items
 - The list predicts when a user will next need to buy each item and provides status indicators to the user
 - Users can share their list with others using a 3-word token
+- This application was designed with user experience and a11y (accessibility) in mind:
+    - clean/simple design with an easy workflow, aiming to feel intuitive to the user
+    - mobile-first design and responsive at all screen sizes
+    - all forms can be navigated using the keyboard only in addition to mouse/touchscreen
+    - alt tags and aria labels included for easy navigation with screen readers
+    - high color contrast for best visibility
+    - status indicators provide information using both text and color
 
 ## Built with
 
